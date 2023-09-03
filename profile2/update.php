@@ -52,7 +52,7 @@ if(isset($_POST['submit'])){
   <form action="form.php" method="post" enctype="multipart/form-data">
     <div class="form-group">
       <label for="image">Image</label>
-      <input type="file" name="image" class="form-control"value="<?php echo $row['first_name'] ?>">
+      <input type="file" name="image" class="form-control"value="<?php echo $row['image'] ?>">
     </div>
     <div class="form-group">
       <label for="district_name">District Name</label>
@@ -72,7 +72,7 @@ if(isset($_POST['submit'])){
     </div>
     <div class="form-group">
       <label for="date_of_birth">Date of Birth</label>
-      <input type="date" name="date_of_birth" class="form-control"value="<?php echo $row['district_name'] ?>">
+      <input type="date" name="date_of_birth" class="form-control"value="<?php echo $row['date_of_birth'] ?>">
     </div>
 
     <div class="form-group">
@@ -103,7 +103,7 @@ if(isset($_POST['submit'])){
 
     <div class="form-group">
       <label for="description">Description</label>
-      <textarea name="description" class="form-control"value="<?php echo $row['last_name'] ?>"></textarea>
+      <input name="description" class="form-control"value="<?php echo $row['last_name'] ?>">
     </div>
     <button type="submit" name="submit" class="btn btn-primary">Submit</button>
   </form>
